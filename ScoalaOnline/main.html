@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Scoala online</title>
+</head>
+<body>
+<style>
+    body {
+        background-image: url("IMG.png");
+        background-color: #cccccc;
+    }
+</style>
+
+
+<div class="container">
+    <header class="school-header py-3">
+        <div class="row flex-nowrap justify-content-end align-items-center">
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="btn btn-sm btn-outline-secondary mr-1"
+                   style="width:130px;background-color: #007bff42;color: #0b2e13; border-color: #0b2e13"
+                   data-toggle="modal" data-target="#exampleModal">
+                    Login</a>
+
+
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <form action="login.php" method="POST">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Autentificare</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="user_login" class="control-label">Utilizator sau email</label>
+                                        <div>
+                                            <input type="text" name="user" id="user_login" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="parola_login" class="control-label">Parola</label>
+                                        <div class="">
+                                            <input type="password" name="parola" id="parola_login" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Inchidere
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">Autentificare</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class=" col-sm-12 center">
+                                            <a href="signup.html" style="margin-right: 95px">Creare cont nou</a>
+                                            <a href="#">Recuperare parolă</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a class="btn btn-sm btn-outline-secondary"
+                   style="width:130px;background-color:#007bff42;color: #0b2e13; border-color: #0b2e13"
+                   href="signup.html">Sign up</a>
+
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="row justify-content-center align-items-center">
+        <br>
+
+        <div class="px-1">
+            <h1 class="display-4 font-italic"><a href="main.html"> <img src="logo2.png"> </a></h1>
+        </div>
+        <br>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-2">
+            <form method="POST" action="login.php">
+                <div class="card"
+                     style="background-color: rgba(35, 98, 110,0.4); border:1px solid black;border-radius: 5px;">
+                    <div class="card-header">
+                        <h6 class="card-title">
+                            Autentificare
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="user" class="control-label" style="font-size: small">Utilizator sau
+                                email</label>
+                            <input type="text" name="user" id="user" class="form-control" style="font-size: small">
+                        </div>
+                        <div class="form-group">
+                            <label for="parola" class="control-label" style="font-size: small">Parola</label>
+                            <input type="password" name="parola" id="parola" class="form-control"
+                                   style="font-size: small">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-login-raspuns"></div>
+                        </div>
+                        <div class="form-group right">
+                            <button type="submit" class="btn btn-primary"
+                                    style="width:130px;background-color: #007bff80; border-color: #0b2e13">Autentificare
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group">
+                            <a href="signup.html" style="font-size: small;color: #0b2e13">
+                                <i class="fas fa-user"></i> Creare cont nou
+                            </a>
+                            <span class="separator"></span>
+                            <a href="#" style="font-size: small;color: #0b2e13">
+                                <i class="fas fa-lock-open"></i>
+                                Recuperare parolă
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.col-lg-4 -->
+
+
+        <div class="col-lg-7"
+             style="align-content: center;background-color: rgba(35, 98, 110,0.4); border:1px solid black;border-radius: 5px;">
+            <br>
+            <h2>Bine ai venit la, Scoala online!</h2>
+            <p>Acest site are scop didactic si este un auxiliar pentru activitatea pedagogica. Cu ajutorul acestui site
+                puteti sa creati clase, adaugati teme, si sa gestionati situatia notelor. Va invitam sa va inregistrati
+                chiar
+                azi, in mod gratuit, si sa va convingeti de caracteristicile prezentate si multe alte avantaje pe care
+                aplicatia
+                noastra le ofera.</p>
+        </div><!-- /.col-lg-4 -->
+        <div style="width: 10px"></div>
+
+        <div class="col-lg-2"
+             style="background-color: rgba(35, 98, 110,0.4); border:1px solid black;padding: 8px;border-radius: 5px;">
+            <br>
+            <svg width="170" height="170"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image href="https://scoala194.ro/wp-content/uploads/2013/03/noutati.png" height="80%" width="80%"/>
+            </svg>
+            <p>•S-a decis ca pentru majoritatea elevilor, în acest an şcolar, grădiniţele, şcolile şi universităţile să
+                nu se mai deschidă până în septembrie.</p>
+            <p>•Anul şcolar se va încheia pe 12 iunie, până atunci, vor continua formele de lucru la distanţă, mediile
+                vor fi închise.
+                Citeşte întreaga ştire: Structura anului școlar 2019-2020. Cursurile se reiau în septembrie</p>
+
+            <p><a class="btn btn-secondary" href="https://www.libertatea.ro/stiri/structura-an-scolar-2019-2020-2544676"
+                  role="button" target="_blank">Citeste mai mult »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+</div>
+
+
+<footer class="blog-footer">
+    <p></p>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

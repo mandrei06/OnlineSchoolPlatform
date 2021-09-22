@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Scoala online</title>
+</head>
+<body>
+<style>
+    body {
+        background-image: url("IMG.png");
+        background-color: #cccccc;
+    }
+</style>
+<div class="container">
+    <header class="school-header py-3">
+        <div class="row flex-nowrap justify-content-end align-items-center">
+            <div class="col-4 d-flex justify-content-end align-items-center">
+
+                <a class="btn btn-sm btn-outline-secondary mr-1" data-toggle="modal" data-target="#exampleModal"
+                   style="width:130px;background-color: #007bff42;color: #0b2e13; border-color: #0b2e13">
+                    Login</a>
+
+
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Autentificare</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="user_login" class="control-label">Utilizator sau email</label>
+                                    <div>
+                                        <input type="text" name="user" id="user_login" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parola_login" class="control-label">Parola</label>
+                                    <div class="">
+                                        <input type="password" name="parola" id="parola_login" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Inchidere
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Autentificare</button>
+                                </div>
+                                <div class="form-group">
+                                    <div class=" col-sm-12 center">
+                                        <a href="signup.html" style="margin-right: 95px">Creare cont nou</a>
+                                        <a href="#">Recuperare parolă</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a class="btn btn-sm btn-outline-secondary" href="signup.html"
+                   style="width:130px;background-color:#007bff42;color: #0b2e13; border-color: #0b2e13"
+                >Sign up</a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="row justify-content-center align-items-center">
+        <br>
+
+        <div class="px-1">
+            <h1 class="display-4 font-italic"><a href="main.html"> <img src="logo2.png"> </a></h1>
+        </div>
+        <br>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-2">
+            <br>
+            <form method="POST" action="login.php">
+                <div class="card"
+                     style="background-color: rgba(35, 98, 110,0.4); border:1px solid black;border-radius: 5px;">
+                    <div class="card-header">
+                        <h6 class="card-title">
+                            Autentificare
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="user" class="control-label" style="font-size: small">Utilizator sau
+                                email</label>
+                            <input type="text" name="user" id="user" class="form-control" style="font-size: small">
+                        </div>
+                        <div class="form-group">
+                            <label for="parola" class="control-label" style="font-size: small">Parola</label>
+                            <input type="password" name="parola" id="parola" class="form-control"
+                                   style="font-size: small">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-login-raspuns"></div>
+                        </div>
+                        <div class="form-group right">
+                            <button type="submit" class="btn btn-primary"
+                                    style="width:130px;background-color: #007bff80; border-color: #0b2e13">Autentificare
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group">
+                            <a href="signup.html" style="font-size: small;color: #0b2e13">
+                                <i class="fas fa-user"></i> Creare cont nou
+                            </a>
+                            <span class="separator"></span>
+                            <a href="#" style="font-size: small;color: #0b2e13">
+                                <i class="fas fa-lock-open"></i>
+                                Recuperare parolă
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.col-lg-4 -->
+
+
+        <div class="col-lg-8">
+
+
+            <form method="POST" action="register.php">
+                <div class="card m-lg-4"
+                     style="background-color: rgba(35, 98, 110,0.4); border:1px solid black;border-radius: 5px;">
+                    <div class="card-header">
+                        <strong class="card-title">
+                            Date de identificare
+                        </strong>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="form-group">
+                            <label for="exampleInputUserName">Utilizator</label>
+                            <input type="text" class="form-control" id="exampleInputUserName" name="username"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci un username.')"
+                                   oninput="this.setCustomValidity('')">
+                            <span style="font-size:0.8em;">
+									Caractere permise: litere mari, mici, cifre, underscore.
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Parola</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci o parola.')"
+                                   oninput="this.setCustomValidity('')">
+                            <span style="font-size:0.8em;">
+									Lungimea minimă a parolei este de 8 caractere.
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Confirmare parola</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" name="password2"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa repeti parola.')"
+                                   oninput="this.setCustomValidity('')">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Adresa email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" required
+                                   oninvalid="this.setCustomValidity('Te rugam sa introduci adresa de email.')"
+                                   oninput="this.setCustomValidity('')"
+                                   aria-describedby="emailHelp" name="email">
+                        </div>
+
+                        <!-- /.col-lg-4
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Accept Termenii si conditiile</label>
+                        </div>-->
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="card m-lg-4"
+                     style="background-color: rgba(35, 98, 110,0.4); border:1px solid black;border-radius: 5px;">
+                    <div class="card-header">
+                        <strong class="panel-title">
+                            Date personale
+                        </strong>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="form-group">
+                            <label for="exampleInputName">Nume</label>
+                            <input type="text" class="form-control" id="exampleInputName" name="nume"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci numele.')"
+                                   oninput="this.setCustomValidity('')">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPrenume">Prenume</label>
+                            <input type="text" class="form-control" id="exampleInputPrenume" name="prenume"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci prenumele.')"
+                                   oninput="this.setCustomValidity('')">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="judet"> Județ </label>
+                            <div class="col-sm-13 form-group">
+                                <select name="id_judet"
+                                        required oninvalid="this.setCustomValidity('Te rugam sa selectezi judetul.')"
+                                        oninput="this.setCustomValidity('')"
+                                        id="judet" class="form-control"
+                                        onchange="$('#div-id_judet-status').removeClass('text-danger').removeClass('text-success').removeClass('text-warning').html('&nbsp;');">
+                                    <option select hidden value="">Alege un judet</option>
+                                    <option value="Alba">Alba</option>
+                                    <option value="Arad">Arad</option>
+                                    <option value="Arges">Arges</option>
+                                    <option value="Bacau">Bacau</option>
+                                    <option value="Bihor">Bihor</option>
+                                    <option value="Bistrita Nasaud">Bistrita Nasaud</option>
+                                    <option value="Botosani">Botosani</option>
+                                    <option value="Braila">Braila</option>
+                                    <option value="Brasov">Brasov</option>
+                                    <option value="Bucuresti">Bucuresti</option>
+                                    <option value="Buzau">Buzau</option>
+                                    <option value="Calarasi">Calarasi</option>
+                                    <option value="Caras Severin">Caras Severin</option>
+                                    <option value="Cluj">Cluj</option>
+                                    <option value="Constanta">Constanta</option>
+                                    <option value="Covasna">Covasna</option>
+                                    <option value="Dambovita">Dambovita</option>
+                                    <option value="Dolj">Dolj</option>
+                                    <option value="Galati">Galati</option>
+                                    <option value="Giurgiu">Giurgiu</option>
+                                    <option value="Gorj">Gorj</option>
+                                    <option value="Harghita">Harghita</option>
+                                    <option value="Hunedoara">Hunedoara</option>
+                                    <option value="Ialomita">Ialomita</option>
+                                    <option value="Iasi">Iasi</option>
+                                    <option value="Ilfov">Ilfov</option>
+                                    <option value="Maramures">Maramures</option>
+                                    <option value="Mehedinti">Mehedinti</option>
+                                    <option value="Mures">Mures</option>
+                                    <option value="Neamt">Neamt</option>
+                                    <option value="Olt">Olt</option>
+                                    <option value="Prahova">Prahova</option>
+                                    <option value="Republica Moldova">Republica Moldova</option>
+                                    <option value="Salaj">Salaj</option>
+                                    <option value="Satu Mare">Satu Mare</option>
+                                    <option value="Sibiu">Sibiu</option>
+                                    <option value="Suceava">Suceava</option>
+                                    <option value="Teleorman">Teleorman</option>
+                                    <option value="Timis">Timis</option>
+                                    <option value="Tulcea">Tulcea</option>
+                                    <option value="Valcea">Valcea</option>
+                                    <option value="Vaslui">Vaslui</option>
+                                    <option value="Vrancea">Vrancea</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputLocalitate">Localitate</label>
+                            <input type="text" class="form-control" id="exampleInputLocalitate" name="localitate"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci localitatea.')"
+                                   oninput="this.setCustomValidity('')">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputScoala">Scoala</label>
+                            <input type="text" class="form-control" id="exampleInputScoala" name="scoala"
+                                   required oninvalid="this.setCustomValidity('Te rugam sa introduci scoala.')"
+                                   oninput="this.setCustomValidity('')">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label">Sunt</label>
+                            <div class="p-t-10">
+                                <label class="radio-container m-r-45">Elev
+                                    <input type="radio" name="status" value="e"
+                                           required
+                                           oninvalid="this.setCustomValidity('Te rugam sa selectezi o optiune.')"
+                                           oninput="this.setCustomValidity('')">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Profesor
+                                    <input type="radio" name="status" value="p">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="right m-lg-4">
+                    <button type="submit" class="btn btn-primary ">Submit</button>
+                </div>
+            </form>
+
+
+        </div><!-- /.col-lg-4 -->
+
+
+
+</div>
+
+
+<footer class="blog-footer">
+    <p></p>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
